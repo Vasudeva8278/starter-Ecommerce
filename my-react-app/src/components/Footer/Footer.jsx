@@ -42,10 +42,9 @@ const Footer = () => {
     <div style={BannerImg} className="text-white">
       <div className="container">
         <div data-aos="zoom-in" className="grid md:grid-cols-3 pb-44 pt-5">
-          {/* company details */}
+          {/* Company details */}
           <div className="py-8 px-4">
             <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3 flex items-center gap-3">
-              <img src={footerLogo} alt="" className="max-w-[50px]" />
               Shopsy
             </h1>
             <p>
@@ -56,6 +55,7 @@ const Footer = () => {
 
           {/* Footer Links */}
           <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10">
+            {/* Important Links */}
             <div>
               <div className="py-8 px-4">
                 <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
@@ -73,6 +73,8 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
+
+            {/* Additional Links */}
             <div>
               <div className="py-8 px-4">
                 <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
@@ -90,30 +92,29 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
+          </div>
 
-            {/* social links */}
-
-            <div>
-              <div className="flex items-center gap-3 mt-6">
-                <a href="#">
-                  <FaInstagram className="text-3xl" />
-                </a>
-                <a href="#">
-                  <FaFacebook className="text-3xl" />
-                </a>
-                <a href="#">
-                  <FaLinkedin className="text-3xl" />
-                </a>
+          {/* Social links and contact */}
+          <div className="py-8 px-4 md:col-span-3">
+            <div className="flex items-center gap-3 mt-6">
+              <a href="#">
+                <FaInstagram className="text-3xl" />
+              </a>
+              <a href="#">
+                <FaFacebook className="text-3xl" />
+              </a>
+              <a href="#">
+                <FaLinkedin className="text-3xl" />
+              </a>
+            </div>
+            <div className="mt-6">
+              <div className="flex items-center gap-3">
+                <FaLocationArrow />
+                <p>Hydrabad</p>
               </div>
-              <div className="mt-6">
-                <div className="flex items-center gap-3">
-                  <FaLocationArrow />
-                  <p>Hydrabad</p>
-                </div>
-                <div className="flex items-center gap-3 mt-3">
-                  <FaMobileAlt />
-                  <p>+91 9640809042</p>
-                </div>
+              <div className="flex items-center gap-3 mt-3">
+                <FaMobileAlt />
+                <p>+91 9640809042</p>
               </div>
             </div>
           </div>

@@ -1,9 +1,50 @@
-import React from "react";
-import Logo from "../../assets/logo.png";
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
+const Navbar = () => {
+    return (
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <div className="container">
+                <a className="navbar-brand" href="#">Brand</a>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="navbarNav">
+                    <ul className="navbar-nav ml-auto">
+                        <li className="nav-item active">
+                            <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#">Features</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    );
+}
+
+export default Navbar;
+
+
+
+
+
+
+{/*import React from "react";
+
 import { IoMdSearch } from "react-icons/io";
 import { FaCartShopping } from "react-icons/fa6";
 import { FaCaretDown } from "react-icons/fa";
-import DarkMode from "./DarkMode";
+
 
 const Menu = [
   {
@@ -54,17 +95,16 @@ const DropdownLinks = [
 const Navbar = ({ handleOrderPopup }) => {
   return (
     <div className="shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40">
-      {/* upper Navbar */}
+    
       <div className="bg-primary/40 py-2">
         <div className="container flex justify-between items-center">
           <div>
             <a href="#" className="font-bold text-2xl sm:text-3xl flex gap-2">
-              <img src={Logo} alt="Logo" className="w-10" />
+              
               Shopsy
             </a>
           </div>
 
-          {/* search bar */}
           <div className="flex justify-between items-center gap-4">
             <div className="relative group hidden sm:block">
               <input
@@ -75,7 +115,7 @@ const Navbar = ({ handleOrderPopup }) => {
               <IoMdSearch className="text-gray-500 group-hover:text-primary absolute top-1/2 -translate-y-1/2 right-3" />
             </div>
 
-            {/* order button */}
+          
             <button
               onClick={() => handleOrderPopup()}
               className="bg-gradient-to-r from-primary to-secondary transition-all duration-200 text-white  py-1 px-4 rounded-full flex items-center gap-3 group"
@@ -86,14 +126,12 @@ const Navbar = ({ handleOrderPopup }) => {
               <FaCartShopping className="text-xl text-white drop-shadow-sm cursor-pointer" />
             </button>
 
-            {/* Darkmode Switch */}
-            <div>
-              <DarkMode />
-            </div>
+          
+      
           </div>
         </div>
       </div>
-      {/* lower Navbar */}
+     
       <div data-aos="zoom-in" className="flex justify-center">
         <ul className="sm:flex hidden items-center gap-4">
           {Menu.map((data) => (
@@ -106,7 +144,7 @@ const Navbar = ({ handleOrderPopup }) => {
               </a>
             </li>
           ))}
-          {/* Simple Dropdown and Links */}
+        
           <li className="group relative cursor-pointer">
             <a href="#" className="flex items-center gap-[2px] py-2">
               Trending Products
@@ -136,3 +174,4 @@ const Navbar = ({ handleOrderPopup }) => {
 };
 
 export default Navbar;
+*/}
